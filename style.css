@@ -2,7 +2,7 @@
 
 :root {
   --purple-bg: #290742;
-
+  --primary-color: #f1c40f;
   --primary-font: 'Poppins', sans-serif;
   --secundary-font: 'Roboto', sans-serif;
 }
@@ -12,4 +12,161 @@
   padding: 0;
   box-sizing: border-box;
   font-family: var(--primary-font);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#header {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em 0;
+}
+
+#logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+#logo-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#logo span {
+  color: rgb(0, 0, 0);
+  font-size: 14px;
+}
+
+#header-img {
+  width: 100px;
+}
+
+#nav-bar ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  gap: 30px;
+}
+
+#nav-bar ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 80px;
+}
+
+#home h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.form #email {
+  width: 275px;
+  padding: 5px;
+}
+
+form .btn {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+}
+
+#features .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 100px;
+  margin-bottom: 50px;
+}
+
+#features i {
+  color: var(--primary-color);
+}
+
+#prices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  gap: 20px;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.card-title {
+  width: 100%;
+  background-color: #ddd;
+  padding: 15px 70px;
+
+}
+
+.card .btn {
+  border-radius: 0;
+  padding: 7px 20px;
+  font-size: 1.1rem;
+  margin: 15px 0;
+}
+
+.card ol {
+  list-style: none;
+}
+
+.card h2 {
+  margin-top: 15px;
 }
